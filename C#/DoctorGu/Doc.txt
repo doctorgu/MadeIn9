@@ -1,0 +1,73 @@
+SQL Server: select null + 'x' -> null
+Oracle: select null || 'x' -> 'x'
+
+string s = "C:\\Temp\\Test.txt";
+Console.WriteLine(Path.GetFileName(s)); //Test.txt
+Console.WriteLine(Path.GetFileNameWithoutExtension(s)); //Test
+Console.WriteLine(Path.GetExtension(s)); //.txt
+
+
+Request의 Params를 읽으면 null인 Parameter도 있음. a=12&=3과 같이 한 경우 null일 수도 있음.
+
+
+this.mTcpClient.SendMessage(txResponse, 
+	delegate(object sender2, SocketAsyncEventArgs e2)
+	{
+		//Debug 모드에서는 다른 Thread에서 this.Close()를 호출하면 FormClosing, FormClosed, Dispose 이벤트가 호출되지 않으므로 호출함.
+		if (CInfo.IsDebugMode)
+			frmChat_FormClosing(this, new FormClosingEventArgs(CloseReason.None, false));
+
+		this.Close();
+	});
+
+
+//SQLite 사용시 다음 에러
+//Mixed mode assembly is built against version 'v2.0.50727' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
+//-> app.config의 useLegacyV2RuntimeActivationPolicy="true"로 하면 됨.
+//http://stackoverflow.com/questions/2455654/what-additional-configuration-is-necessary-to-reference-a-net-2-0-mixed-mode-a
+<?xml version="1.0"?>
+<configuration>
+	<startup useLegacyV2RuntimeActivationPolicy="true">
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+	</startup>
+</configuration>
+
+//윈도우 폼에 UserControl 넣으면 UserControl의 Load 이벤트가 먼저 발생함.
+
+
+private static void LateBinding()
+{
+	string AssemblyName = CInfo.Is64bit ? "PrinterUtilX64" : "PrinterUtilX86";
+	string ClassName = "CPrinterConfiguration";
+
+	Assembly assem = null;
+	try
+	{
+		assem = Assembly.Load(AssemblyName);
+	}
+	catch (FileNotFoundException e)
+	{
+		Console.WriteLine(e.Message);
+		return;
+	}
+
+	try
+	{
+		Type t = assem.GetType(AssemblyName + "." + ClassName);
+		object pc = Activator.CreateInstance(t);
+
+		MethodInfo mi = null;
+		mi = t.GetMethod("GetDefaultPrinterName");
+		string PrinterName = (string)mi.Invoke(pc, null);
+
+		mi = t.GetMethod("GetPaperSizeByPaperKind");
+		PaperSize SizeToChange = (PaperSize)mi.Invoke(pc, new object[] { PaperKind.A5 });
+
+		mi = t.GetMethod("ChangePrinterPaperSize");
+		mi.Invoke(pc, new object[] { PrinterName, SizeToChange });
+	}
+	catch (Exception ex)
+	{
+		throw ex;
+	}
+}

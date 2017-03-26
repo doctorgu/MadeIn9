@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F546AE89-A76B-4F6D-9978-ED04D3531F0C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DoctorGuX86</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DoctorGu</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\DoctorGuX86.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>bin\Release\DoctorGuX86.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="AjaxMin">
+      <HintPath>C:\Program Files (x86)\Microsoft\Microsoft Ajax Minifier\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\Program\DotNet Control\SharpZipLib\086SharpZipLib_SourceSamples\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAdo.cs" />
+    <Compile Include="CArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CAssembly.cs" />
+    <Compile Include="CBarcode.cs" />
+    <Compile Include="CClipboardFunctions.cs" />
+    <Compile Include="CConst.cs" />
+    <Compile Include="CCookie.cs" />
+    <Compile Include="CCsc.cs" />
+    <Compile Include="CDataGridView.cs" />
+    <Compile Include="CDataTableClient.cs" />
+    <Compile Include="CDirectory.cs" />
+    <Compile Include="CDistanceAngle.cs" />
+    <Compile Include="CDynamicDictionary.cs" />
+    <Compile Include="CGridView.cs" />
+    <Compile Include="CHangul.cs" />
+    <Compile Include="CMessageBoxTimeout.cs" />
+    <Compile Include="CPrinterConfiguration.cs" />
+    <Compile Include="CScreenCapture.cs" />
+    <Compile Include="CUrl.cs" />
+    <Compile Include="Encryption\CDPApi.cs" />
+    <Compile Include="Encryption\CEncrypt.cs" />
+    <Compile Include="CEnum.cs" />
+    <Compile Include="CFile.cs" />
+    <Compile Include="CFrameworkVersionDetection.cs" />
+    <Compile Include="CGridViewCheckBox.cs" />
+    <Compile Include="CHtmlToText.cs" />
+    <Compile Include="CInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CInputBox.Designer.cs">
+      <DependentUpon>CInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CKeyboardBlock.cs" />
+    <Compile Include="CAudio.cs" />
+    <Compile Include="COfficeFormula.cs" />
+    <Compile Include="CLog.cs" />
+    <Compile Include="COleDocProp.cs" />
+    <Compile Include="CRegex.cs" />
+    <Compile Include="CResolution.cs" />
+    <Compile Include="CResource.cs" />
+    <Compile Include="CSafeNativeMethods.cs" />
+    <Compile Include="CLang.cs" />
+    <Compile Include="CList.cs" />
+    <Compile Include="CPath.cs" />
+    <Compile Include="CRandomUnique.cs" />
+    <Compile Include="CSilverlight.cs" />
+    <Compile Include="CSound.cs" />
+    <Compile Include="CSpeakerVolume.cs" />
+    <Compile Include="CSqlInfoInsert.cs" />
+    <Compile Include="CSqlParser.cs" />
+    <Compile Include="CStoredProc.cs" />
+    <Compile Include="CStringWriterWithEncoding.cs" />
+    <Compile Include="CSwfObject.cs" />
+    <Compile Include="CRegexPattern.cs" />
+    <Compile Include="CSyncFile.cs" />
+    <Compile Include="CChooseBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CChooseBox.Designer.cs">
+      <DependentUpon>CChooseBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CClientControl.cs" />
+    <Compile Include="CCode.cs" />
+    <Compile Include="CErWin.cs" />
+    <Compile Include="CScript.cs" />
+    <Compile Include="CEmail.cs" />
+    <Compile Include="CCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CColorConv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDataGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDataTable.cs" />
+    <Compile Include="CDateTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDBStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDelim.cs" />
+    <Compile Include="CEvent.cs" />
+    <Compile Include="CExamples.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CFindRep.cs" />
+    <Compile Include="CFtp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CFtp2.cs" />
+    <Compile Include="CHtml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CHtmlParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CHtmlPrint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CHtmlStyleConv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CKeyValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CListBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CListView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CMath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CParagraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CProc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CQueryString.cs" />
+    <Compile Include="CReflection.cs" />
+    <Compile Include="CRegComponent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CRegistry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CRowSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CSprWin.cs" />
+    <Compile Include="CSql.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CSyncTwoScroll.cs" />
+    <Compile Include="CSyntaxColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CTemplate.cs" />
+    <Compile Include="CTimeMeasure.cs" />
+    <Compile Include="CTreeView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CTreeViewToXml.cs" />
+    <Compile Include="CTts.cs" />
+    <Compile Include="CTwoByte.cs" />
+    <Compile Include="CType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CTypeConversion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CValid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CWeb.cs" />
+    <Compile Include="CWebBrowser.cs" />
+    <Compile Include="CWebImpersonate.cs" />
+    <Compile Include="CWebControl.cs" />
+    <Compile Include="CWebForm.cs" />
+    <Compile Include="CWebListControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CWebRadioButton.cs" />
+    <Compile Include="CWebTable.cs" />
+    <Compile Include="CWebTreeView.cs" />
+    <Compile Include="CWinForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CWnd.cs" />
+    <Compile Include="CWsh.cs" />
+    <Compile Include="CXml.cs" />
+    <Compile Include="CXmlConfig.cs" />
+    <Compile Include="CObservableDictionary.cs" />
+    <Compile Include="CSharpZipHelper.cs" />
+    <Compile Include="CDebugBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDebugBox.Designer.cs">
+      <DependentUpon>CDebugBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encryption\CMd5.cs" />
+    <Compile Include="Encryption\CRijndael.cs" />
+    <Compile Include="Encryption\CSeed.cs" />
+    <Compile Include="ShellLib\FilterByExtension.cs" />
+    <Compile Include="ShellLib\IFolderFilter.cs" />
+    <Compile Include="ShellLib\IFolderFilterSite.cs" />
+    <Compile Include="ShellLib\IMalloc.cs" />
+    <Compile Include="ShellLib\IShellFolder.cs" />
+    <Compile Include="ShellLib\ShellAddRecent.cs" />
+    <Compile Include="ShellLib\ShellApi.cs" />
+    <Compile Include="ShellLib\ShellBrowseForFolderDialog.cs" />
+    <Compile Include="ShellLib\ShellExecute.cs" />
+    <Compile Include="ShellLib\ShellFileOperation.cs" />
+    <Compile Include="ShellLib\ShellFunctions.cs" />
+    <Compile Include="ShellLib\ShellGUIDs.cs" />
+    <Compile Include="ShellLib\ShellNameMapping.cs" />
+    <Compile Include="Tuple.cs" />
+    <Content Include="Doc.txt" />
+    <Content Include="ShellLib\_Doc.txt" />
+    <EmbeddedResource Include="CChooseBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CChooseBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CInputBox.resx">
+      <DependentUpon>CInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <AppDesigner Include="Properties\" />
+    <EmbeddedResource Include="CDebugBox.resx">
+      <DependentUpon>CDebugBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UpdateAssemblyVersion="False" BuildVersion_UpdateFileVersion="False" BuildVersion_BuildVersioningStyle="None.None.None.None" BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
